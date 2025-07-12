@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla QyFA USS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Malla Química y Farmacia USS</h1>
+  <div id="malla">
+    <div class="ramo" data-nombre="Química General" data-prerrequisitos="">
+      Química General
+    </div>
+    <div class="ramo" data-nombre="Fisicoquímica" data-prerrequisitos="Química General">
+      Fisicoquímica
+    </div>
+    <div class="ramo" data-nombre="Bioquímica" data-prerrequisitos="Química General">
+      Bioquímica
+    </div>
+    <div class="ramo" data-nombre="Farmacología" data-prerrequisitos="Bioquímica">
+      Farmacología
+    </div>
+  </div>
+  <button onclick="resetMalla()">Resetear Malla</button>
+  <script src="script.js"></script>
+</body>
+</html>
